@@ -2,59 +2,213 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Clean Living & Eco-Friendly Wellness</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Clean Living Blueprint | The Wellness Mom Project</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --sage: #8fbfa8;
+      --lavender: #8a7bbd;
+      --cream: #f9f9f6;
+      --charcoal: #2f3e3a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--charcoal);
+      background: var(--cream);
+    }
+
+    /* HERO BANNER */
+    .hero {
+      background: linear-gradient(rgba(143,191,168,0.85), rgba(138,123,189,0.85)), url('wellness%20image%20A.jpeg') center/cover no-repeat;
+      padding: 5rem 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      max-width: 900px;
+      margin: 0 auto 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .cta-primary {
+      background: white;
+      color: var(--lavender);
+      padding: 1rem 2.5rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    /* CONTENT */
+    main {
+      max-width: 1100px;
+      margin: -4rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 26px;
+      padding: 3rem;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+      margin-bottom: 4rem;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .split img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--lavender);
+      font-size: 2.2rem;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    /* FORM */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input {
+      padding: 0.9rem 1rem;
+      border-radius: 30px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background: linear-gradient(135deg, var(--lavender), var(--sage));
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 40px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: url('wellness%20image%20B.jpeg') center/cover no-repeat;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 0.6rem;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .split { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.3rem; }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Clean Living & Eco-Friendly Wellness</h1>
-  <p>Simple habits • Mindful wellness • Natural living</p>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="#newsletter">Newsletter</a>
-  </nav>
-</header>
-
+<!-- HERO -->
 <section class="hero">
-  <h2>Welcome to My Wellness Journey</h2>
-  <p>
-    This space is dedicated to clean living, eco-friendly choices,
-    and wellness solutions that support a healthier lifestyle.
-  </p>
+  <h1>Create a Safer Home, Calmer Life & Aligned Income</h1>
+  <p>Download my free Clean Living Blueprint created for moms who want clarity, confidence, and wellness without overwhelm.</p>
+  <a class="cta-primary" href="#blueprint">Get the Free Blueprint</a>
 </section>
 
-<section>
-  <h2>Why Clean Living?</h2>
-  <p>
-    Clean living is about reducing toxins, supporting the body naturally,
-    and making intentional choices that align with long-term wellness.
-    I share what I use, what I learn, and what truly works for me.
-  </p>
+<main>
+
+<!-- ABOUT -->
+<section class="card split">
+  <div>
+    <h2>Hi, I’m Rhina</h2>
+    <p>I’m a mom of two who didn’t start in wellness — I started with questions. What’s actually safe? What matters? And how do we protect our families without fear?</p>
+    <p>This project exists to give moms education first, confidence second, and opportunity when they’re ready.</p>
+  </div>
+  <img src="Rhinajasimage.jpg" alt="Rhina – Wellness Mom Project">
 </section>
 
-<section id="newsletter" class="newsletter">
-  <h2>Join the Journey</h2>
-  <p>
-    Receive wellness tips, clean product insights, and inspiration
-    for living a more eco-conscious life.
-  </p>
+<!-- WHAT YOU GET -->
+<section class="card split">
+  <img src="wellnessimage%20C.jpg" alt="Clean living wellness">
+  <div>
+    <h2>Inside the Free Blueprint</h2>
+    <ul>
+      <li>How to reduce toxins without replacing everything</li>
+      <li>What labels actually matter (and which don’t)</li>
+      <li>Simple swaps that make the biggest impact</li>
+      <li>How education can turn into aligned income</li>
+    </ul>
+  </div>
+</section>
 
-  <!-- Netlify Form -->
-  <form name="newsletter" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="newsletter">
+<!-- EMAIL CAPTURE -->
+<section id="blueprint" class="card">
+  <h2>Get the Free Clean Living Blueprint</h2>
+  <p>Enter your email below and I’ll send it straight to your inbox.</p>
+
+  <!-- Replace action with HubSpot / form endpoint -->
+  <form action="#" method="post">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
-    <button type="submit">Join the Community</button>
+    <button type="submit">Send Me the Blueprint</button>
   </form>
 </section>
 
+<!-- BOOK CALL -->
+<section class="card">
+  <h2>Want Support or Have Questions?</h2>
+  <p>If you want guidance or to explore working together, you can book a calm, no-pressure call.</p>
+  <a class="cta-primary" href="https://calendly.com/pinkelitestudio" target="_blank">Book a Call</a>
+</section>
+
+</main>
+
 <footer>
-  <p>© 2025 CleanLivingAndEcoFriendly.com</p>
-  <p>This site shares personal experiences and educational content only.</p>
+  <p>© 2025 The Wellness Mom Project</p>
+  <p>
+    <a href="https://www.instagram.com/thewellnessmomproject/" target="_blank">Instagram</a> |
+    <a href="https://www.facebook.com/TheWellnessMomProject" target="_blank">Facebook</a>
+  </p>
 </footer>
 
 </body>
 </html>
+
