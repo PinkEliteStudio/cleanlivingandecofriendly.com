@@ -4,128 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free Blueprint | The Wellness Mom Project</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #f9f9f6;
-      color: #2f3e3a;
-    }
-
-    .hero {
-      background: linear-gradient(rgba(143,191,168,0.85), rgba(138,123,189,0.85)),
-        url('wellnessimage%20B.jpg') center/cover no-repeat;
-      padding: 5rem 1.5rem;
-      text-align: center;
-      color: white;
-    }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: -4rem auto 4rem;
-      background: white;
-      border-radius: 30px;
-      padding: 4rem;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    img {
-      width: 100%;
-      border-radius: 24px;
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      color: #8a7bbd;
-      font-size: 2.2rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    li {
-      margin-bottom: 0.8rem;
-    }
-
-    form {
-      margin-top: 2rem;
-      display: grid;
-      gap: 1rem;
-    }
-
-    input {
-      padding: 0.9rem 1rem;
-      border-radius: 30px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      background: linear-gradient(135deg, #8a7bbd, #8fbfa8);
-      color: white;
-      padding: 1rem;
-      border-radius: 40px;
-      border: none;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      padding: 3rem 1rem;
-      color: #777;
-    }
-
-    @media (max-width: 900px) {
-      .container { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 2.3rem; }
-    }
+    body { margin:0; font-family:'Montserrat',sans-serif; background:#f9f9f6; color:#2f3e3a; }
+    .hero { background: linear-gradient(rgba(143,191,168,0.85), rgba(138,123,189,0.85)), url('wellnessimage%20B.jpg') center/cover no-repeat; padding:5rem 1.5rem; text-align:center; color:white; }
+    .hero h1 { font-family:'Playfair Display',serif; font-size:3rem; margin-bottom:1rem; }
+    .container { max-width: 700px; margin: -4rem auto 4rem; background:white; border-radius:30px; padding:4rem; box-shadow:0 20px 60px rgba(0,0,0,0.12); text-align:center; }
+    input { padding:0.9rem 1rem; border-radius:30px; border:1px solid #ccc; width:80%; margin-bottom:1rem; }
+    button { background: linear-gradient(135deg, #8a7bbd, #8fbfa8); color:white; padding:1rem 2rem; border-radius:40px; border:none; font-weight:600; cursor:pointer; font-size:1rem; }
   </style>
 </head>
 <body>
 
 <section class="hero">
-  <h1>🛑 Stop Buying Toxic Products!</h1>
-  <p>Unlock the Blueprint for a Non-Toxic Home & Residual Income</p>
+  <h1>Unlock Your Free Non-Toxic Home Blueprint</h1>
+  <p>Enter your info below and get the guide straight to your inbox.</p>
 </section>
 
 <section class="container">
-  <div>
-    <h2>The Blueprint Reveals:</h2>
-    <ul>
-      <li>The 5 toxic “super-cleaners” you must replace immediately</li>
-      <li>How to swap stores and save money every month</li>
-      <li>The hidden formula for building residual income</li>
-      <li>Your personal invitation to a fast-growing wellness community</li>
-    </ul>
-
-    <!-- CONNECT THIS FORM -->
-    <form action="#" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <button type="submit">Get the Free Blueprint</button>
-    </form>
-  </div>
-
-  <img src="Rhinajasimage.jpg" alt="Rhina - The Wellness Mom Project">
+  <form name="blueprint-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+    <input type="hidden" name="form-name" value="blueprint-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <button type="submit">Get the Free Blueprint</button>
+  </form>
 </section>
-
-<footer>
-  <p>© 2025 The Wellness Mom Project</p>
-</footer>
 
 </body>
 </html>
