@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Wellness Mom Project | Clean Living</title>
 
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -20,14 +21,17 @@
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: var(--cream);
       color: var(--charcoal);
+      background: var(--cream);
+      line-height: 1.6;
     }
 
     /* HERO */
     .hero {
-      background: linear-gradient(rgba(143,191,168,0.85), rgba(138,123,189,0.85)), url('wellness%20image%20A.jpeg') center/cover no-repeat;
-      padding: 5rem 1.5rem;
+      background:
+        linear-gradient(rgba(47,62,58,0.55), rgba(47,62,58,0.55)),
+        url('wellnessimage%20A.jpg') center/cover no-repeat;
+      padding: 6rem 1.5rem;
       text-align: center;
       color: white;
     }
@@ -41,7 +45,7 @@
 
     .hero p {
       font-size: 1.2rem;
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto 2.5rem;
     }
 
@@ -63,8 +67,8 @@
 
     .card {
       background: white;
-      border-radius: 28px;
-      padding: 3.5rem;
+      border-radius: 26px;
+      padding: 3rem;
       box-shadow: 0 20px 45px rgba(0,0,0,0.08);
       margin-bottom: 4rem;
     }
@@ -92,10 +96,42 @@
     ul { padding-left: 1.2rem; }
     li { margin-bottom: 0.8rem; }
 
+    /* FORM */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 520px;
+    }
+
+    input {
+      padding: 0.9rem 1rem;
+      border-radius: 30px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background: linear-gradient(135deg, var(--lavender), var(--sage));
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 40px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
     /* SUPPORT SECTION WITH IMAGE */
     .support {
-      background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('wellnessimage%20B.jpg') center/cover no-repeat;
+      background:
+        linear-gradient(rgba(47,62,58,0.6), rgba(47,62,58,0.6)),
+        url('wellnessimage%20B.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
     }
+
+    .support h2 { color: white; }
 
     /* FOOTER */
     footer {
@@ -119,39 +155,55 @@
 </head>
 <body>
 
+<!-- HERO -->
 <section class="hero">
   <h1>Create a Safer Home, Calmer Life & Aligned Income</h1>
-  <p>Education-first wellness for moms who want clarity, confidence, and intention.</p>
-  <a class="cta-primary" href="landing.html">Get the Free Blueprint</a>
+  <p>Clean living education for moms who want clarity, confidence, and a healthier home — without overwhelm.</p>
+  <a class="cta-primary" href="#blueprint">Get the Free Blueprint</a>
 </section>
 
 <main>
 
+<!-- ABOUT -->
 <section class="card split">
   <div>
     <h2>Hi, I’m Rhina</h2>
-    <p>I’m a mom of two on a mission to help families create safer homes and sustainable income through education.</p>
-    <p>This space is calm, grounded, and built for moms who want wellness without overwhelm.</p>
+    <p>I’m a mom of two who didn’t start in wellness — I started with questions.</p>
+    <p>This project exists to help moms protect their families, simplify clean living, and open the door to aligned income when they’re ready.</p>
   </div>
-  <img src="Rhinajasimage.jpg" alt="Rhina – Wellness Mom Project">
+  <img src="Rhinajasimage.jpg" alt="Rhina – The Wellness Mom Project">
 </section>
 
+<!-- WHAT YOU GET -->
 <section class="card split">
   <img src="wellnessimage%20C.jpg" alt="Clean living wellness">
   <div>
-    <h2>What I Teach</h2>
+    <h2>Inside the Free Blueprint</h2>
     <ul>
-      <li>Reducing toxins without fear</li>
-      <li>Understanding labels and ingredients</li>
-      <li>Intentional, budget-friendly swaps</li>
-      <li>Turning education into aligned income</li>
+      <li>The toxic "super-cleaners" hiding in your home</li>
+      <li>Simple swaps that actually matter</li>
+      <li>How to save money by switching stores</li>
+      <li>The path to residual income through education</li>
     </ul>
   </div>
 </section>
 
+<!-- EMAIL CAPTURE (STAYS ON MAIN SITE) -->
+<section id="blueprint" class="card">
+  <h2>Get the Free Clean Living Blueprint</h2>
+  <p>Enter your name and email below and I’ll send it straight to your inbox.</p>
+
+  <form action="landing.html" method="get">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <button type="submit">Send Me the Blueprint</button>
+  </form>
+</section>
+
+<!-- SUPPORT SECTION WITH IMAGE BACKGROUND -->
 <section class="card support">
   <h2>Want Support or Have Questions?</h2>
-  <p>If you want guidance or to explore working together, you can book a calm, no-pressure call.</p>
+  <p>If you’d like guidance or want to explore working together, book a calm, no-pressure call.</p>
   <a class="cta-primary" href="https://calendly.com/pinkelitestudio" target="_blank">Book a Call</a>
 </section>
 
@@ -167,4 +219,5 @@
 
 </body>
 </html>
+
 
