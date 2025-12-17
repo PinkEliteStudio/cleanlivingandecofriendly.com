@@ -2,58 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You | The Wellness Mom Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    body { 
-      font-family: 'Montserrat', sans-serif; 
-      display:flex; 
-      flex-direction:column; 
-      justify-content:center; 
-      align-items:center; 
-      height:100vh; 
-      margin:0; 
-      background:#f9f9f6; 
-      color:#2f3e3a; 
-      text-align:center; 
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f9f9f6;
+      font-family: 'Montserrat', sans-serif;
+      color: #2f3e3a;
+      text-align: center;
       padding: 2rem;
     }
 
-    h1 { 
-      font-family:'Playfair Display', serif; 
-      font-size:2.5rem; 
-      margin-bottom:1rem; 
+    .container {
+      max-width: 640px;
+      background: white;
+      padding: 3rem 2.5rem;
+      border-radius: 28px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
     }
 
-    p { 
-      font-size:1.2rem; 
-      margin-bottom:2rem; 
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #8a7bbd;
     }
 
-    a { 
-      display:inline-block; 
-      padding:1rem 2rem; 
-      border-radius:40px; 
-      background: linear-gradient(135deg,#8a7bbd,#8fbfa8); 
-      color:white; 
-      text-decoration:none; 
-      font-weight:600; 
-      margin: 0.5rem 0;
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
     }
 
-    .download { background: linear-gradient(135deg,#8fbfa8,#8a7bbd); }
+    .btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      border-radius: 40px;
+      background: linear-gradient(135deg, #8a7bbd, #8fbfa8);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .home-link {
+      display: block;
+      margin-top: 1rem;
+      text-decoration: underline;
+      color: #2f3e3a;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
+
 <body>
-  <h1>Thank You!</h1>
-  <p>Your free blueprint is on its way to your inbox.</p>
 
-  <!-- Button to download PDF -->
-  <a class="download" href="blueprint.pdf" download>Download Your Free Blueprint</a>
+  <div class="container">
+    <h1>You're In! 🎉</h1>
 
-  <!-- Return to homepage -->
-  <a href="index.html">Return to Homepage</a>
+    <p>
+      Your first step toward a healthier home and aligned income starts now.
+      Click below to download your free Clean Living Blueprint.
+    </p>
+
+    <!-- IMPORTANT: PDF MUST BE IN ROOT -->
+    <a class="btn" href="clean-living-blueprint.pdf" download>
+      Download Your Free Blueprint
+    </a>
+
+    <a class="home-link" href="index.html">
+      Return to Home
+    </a>
+  </div>
+
 </body>
 </html>
+
 
