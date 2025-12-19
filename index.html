@@ -5,34 +5,174 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Wellness Mom Project | Clean Living</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    :root { --sage: #8fbfa8; --lavender: #8a7bbd; --cream: #f9f9f6; --charcoal: #2f3e3a; }
+    :root {
+      --sage: #8fbfa8;
+      --lavender: #8a7bbd;
+      --cream: #f9f9f6;
+      --charcoal: #2f3e3a;
+    }
+
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: 'Montserrat', sans-serif; color: var(--charcoal); background: var(--cream); line-height: 1.6; }
-    .hero { background: linear-gradient(rgba(47,62,58,0.55), rgba(47,62,58,0.55)), url('wellness%20image%20A.jpeg') center/cover no-repeat; padding: 6rem 1.5rem; text-align: center; color: white; }
-    .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; max-width: 900px; margin: 0 auto 1rem; }
-    .hero p { font-size: 1.2rem; max-width: 720px; margin: 0 auto 2.5rem; }
-    .cta-primary { background: linear-gradient(135deg, var(--lavender), var(--sage)); color: white; padding: 1rem 2.5rem; border-radius: 40px; text-decoration: none; font-weight: 600; display: inline-block; font-size: 1rem; }
-    main { max-width: 1100px; margin: -4rem auto 4rem; padding: 0 1.5rem; }
-    .card { background: white; border-radius: 26px; padding: 3rem; box-shadow: 0 20px 45px rgba(0,0,0,0.08); margin-bottom: 4rem; text-align: center; }
-    h2 { font-family: 'Playfair Display', serif; color: var(--lavender); font-size: 2.2rem; margin-top: 0; }
-    footer { text-align: center; padding: 3rem 1rem; background: #2f3e3a; color: white; }
-    @media (max-width: 900px) { .hero h1 { font-size: 2.3rem; } }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--charcoal);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(47,62,58,0.55), rgba(47,62,58,0.55)),
+        url('wellness%20image%20A.jpeg') center/cover no-repeat;
+      padding: 6rem 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      max-width: 900px;
+      margin: 0 auto 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .cta-primary {
+      background: linear-gradient(135deg, var(--lavender), var(--sage));
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      font-size: 1rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: -4rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 26px;
+      padding: 3rem;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+      margin-bottom: 4rem;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .split img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--lavender);
+      font-size: 2.2rem;
+      margin-top: 0;
+    }
+
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.8rem; }
+
+    /* SUPPORT SECTION */
+    .support {
+      background:
+        linear-gradient(rgba(47,62,58,0.6), rgba(47,62,58,0.6)),
+        url('wellnessimage%20B.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+    }
+
+    .support h2 { color: white; }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #2f3e3a;
+      color: white;
+    }
+
+    footer a { color: white; margin: 0 0.6rem; text-decoration: underline; }
+
+    @media (max-width: 900px) {
+      .split { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.3rem; }
+    }
   </style>
 </head>
 <body>
+
 <section class="hero">
   <h1>Create a Safer Home, Calmer Life & Aligned Income</h1>
-  <p>Clean living education for moms who want clarity, confidence, and a healthier home.</p>
-  <a class="cta-primary" href="landing.html">Get the Free Blueprint</a>
+  <p>Clean living education for moms who want clarity, confidence, and a healthier home — without overwhelm.</p>
+  <a class="cta-primary" href="#blueprint">Get the Free Blueprint</a>
 </section>
+
 <main>
-  <section class="card">
-    <h2>Ready to Simplify Clean Living?</h2>
-    <p>Unlock the Blueprint for a Non-Toxic Home.</p>
-    <a class="cta-primary" href="landing.html">Yes, More Information</a>
-  </section>
+
+<section class="card split">
+  <div>
+    <h2>Hi, I’m Rhina</h2>
+    <p>I’m a mom of two who didn’t start in wellness — I started with questions.</p>
+    <p>This project exists to help moms protect their families, simplify clean living, and open the door to aligned income when they’re ready.</p>
+  </div>
+  <img src="Rhinajasimage.jpg" alt="Rhina – The Wellness Mom Project">
+</section>
+
+<section class="card split">
+  <img src="wellnessimage%20C.jpg" alt="Clean living wellness">
+  <div>
+    <h2>Inside the Free Blueprint</h2>
+    <ul>
+      <li>The toxic "super-cleaners" hiding in your home</li>
+      <li>Simple swaps that actually matter</li>
+      <li>How to save money by switching stores</li>
+      <li>The path to residual income through education</li>
+    </ul>
+  </div>
+</section>
+
+<section id="blueprint" class="card" style="text-align: center;">
+  <h2>Unlock the Blueprint for a Non-Toxic Home & Residual Income</h2>
+  <p>Would you like to get this free guide?</p>
+  <a class="cta-primary" href="landing.html">Yes, More Information</a>
+</section>
+
+<section class="card support">
+  <h2>Want Support or Have Questions?</h2>
+  <p>If you’d like guidance or want to explore working together, book a calm, no-pressure call.</p>
+  <a class="cta-primary" href="https://calendly.com/pinkelitestudio" target="_blank">Book a Call</a>
+</section>
+
 </main>
-<footer><p>© 2025 The Wellness Mom Project</p></footer>
+
+<footer>
+  <p>© 2025 The Wellness Mom Project</p>
+  <p>
+    <a href="https://www.instagram.com/thewellnessmomproject/" target="_blank">Instagram</a> |
+    <a href="https://www.facebook.com/TheWellnessMomProject" target="_blank">Facebook</a>
+  </p>
+</footer>
+
 </body>
 </html>
