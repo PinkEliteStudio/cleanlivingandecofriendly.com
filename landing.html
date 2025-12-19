@@ -58,7 +58,9 @@
   <div class="form-container">
     <h2>Almost there!</h2>
     <p>Enter your details below to receive your free Clean Living Blueprint.</p>
+    
     <form name="blueprint-signup" method="POST" data-netlify="true" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="blueprint-signup" />
       <input type="text" name="name" placeholder="First Name" required>
       <input type="email" name="email" placeholder="Email Address" required>
       <button type="submit" class="btn">Send Me the Blueprint</button>
