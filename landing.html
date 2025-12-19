@@ -3,84 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free Blueprint | The Wellness Mom Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <title>The Wellness Mom Project | Clean Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body { 
-      margin: 0; 
-      font-family: 'Montserrat', sans-serif; 
-      background: #f9f9f6; 
-      color: #2f3e3a; 
-    }
-
-    .hero { 
-      background: linear-gradient(rgba(143,191,168,0.85), rgba(138,123,189,0.85)), url('wellnessimage B.jpg') center/cover no-repeat; 
-      padding: 5rem 1.5rem; 
-      text-align: center; 
-      color: white; 
-    }
-
-    .hero h1 { 
-      font-family: 'Playfair Display', serif; 
-      font-size: 3rem; 
-      margin-bottom: 1rem; 
-    }
-
-    .hero p { 
-      font-size: 1.2rem; 
-      max-width: 720px; 
-      margin: 0 auto; 
-    }
-
-    .container { 
-      max-width: 700px; 
-      margin: -4rem auto 4rem; 
-      background: white; 
-      border-radius: 30px; 
-      padding: 4rem; 
-      box-shadow: 0 20px 60px rgba(0,0,0,0.12); 
-      text-align: center; 
-    }
-
-    input { 
-      padding: 0.9rem 1rem; 
-      border-radius: 30px; 
-      border: 1px solid #ccc; 
-      width: 80%; 
-      margin-bottom: 1rem; 
-      font-size: 1rem;
-    }
-
-    button { 
-      background: linear-gradient(135deg, #8a7bbd, #8fbfa8); 
-      color: white; 
-      padding: 1rem 2rem; 
-      border-radius: 40px; 
-      border: none; 
-      font-weight: 600; 
-      cursor: pointer; 
-      font-size: 1rem; 
-    }
+    :root { --sage: #8fbfa8; --lavender: #8a7bbd; --cream: #f9f9f6; --charcoal: #2f3e3a; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Montserrat', sans-serif; color: var(--charcoal); background: var(--cream); line-height: 1.6; }
+    .hero { background: linear-gradient(rgba(47,62,58,0.55), rgba(47,62,58,0.55)), url('wellness%20image%20A.jpeg') center/cover no-repeat; padding: 6rem 1.5rem; text-align: center; color: white; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: 3rem; max-width: 900px; margin: 0 auto 1rem; }
+    .hero p { font-size: 1.2rem; max-width: 720px; margin: 0 auto 2.5rem; }
+    .cta-primary { background: linear-gradient(135deg, var(--lavender), var(--sage)); color: white; padding: 1rem 2.5rem; border-radius: 40px; text-decoration: none; font-weight: 600; display: inline-block; }
+    main { max-width: 1100px; margin: -4rem auto 4rem; padding: 0 1.5rem; }
+    .card { background: white; border-radius: 26px; padding: 3rem; box-shadow: 0 20px 45px rgba(0,0,0,0.08); margin-bottom: 4rem; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .split img { width: 100%; border-radius: 24px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
+    h2 { font-family: 'Playfair Display', serif; color: var(--lavender); font-size: 2.2rem; margin-top: 0; }
+    .support { background: linear-gradient(rgba(47,62,58,0.6), rgba(47,62,58,0.6)), url('wellnessimage%20B.jpg') center/cover no-repeat; color: white; text-align: center; }
+    .support h2 { color: white; }
+    footer { text-align: center; padding: 3rem 1rem; background: #2f3e3a; color: white; }
+    footer a { color: white; margin: 0 0.6rem; text-decoration: underline; }
+    @media (max-width: 900px) { .split { grid-template-columns: 1fr; } .hero h1 { font-size: 2.3rem; } }
   </style>
 </head>
 <body>
-
 <section class="hero">
-  <h1>Unlock Your Free Non-Toxic Home Blueprint</h1>
-  <p>Enter your info below and get the guide straight to your inbox.</p>
+  <h1>Create a Safer Home, Calmer Life & Aligned Income</h1>
+  <p>Clean living education for moms who want clarity, confidence, and a healthier home.</p>
+  <a class="cta-primary" href="#blueprint">Get the Free Blueprint</a>
 </section>
-
-<section class="container">
-  <!-- Netlify form -->
-  <form name="blueprint-form" method="POST" data-netlify="true" action="/thank-you.html">
-    <input type="hidden" name="form-name" value="blueprint-form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <button type="submit">Get the Free Blueprint</button>
-  </form>
+<main>
+<section class="card split">
+  <div>
+    <h2>Hi, I’m Rhina</h2>
+    <p>I’m a mom of two who didn’t start in wellness — I started with questions.</p>
+    <p>This project exists to help moms protect their families and simplify clean living.</p>
+  </div>
+  <img src="Rhinajasimage.jpg" alt="Rhina">
 </section>
-
+<section id="blueprint" class="card">
+  <h2>Unlock the Blueprint</h2>
+  <p>Would you like to get this free guide?</p>
+  <a class="cta-primary" href="landing.html">Yes, More Information</a>
+</section>
+</main>
+<footer><p>© 2025 The Wellness Mom Project</p></footer>
 </body>
 </html>
-
